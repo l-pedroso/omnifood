@@ -1,3 +1,6 @@
+/*------------------------------------*/
+/*            BASIC SETUP             */
+/*------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +17,65 @@ html {
 
 }
 
+/*------------------------------------*/
+/*    REUSABLE COMPONENTS             */
+/*------------------------------------*/
+
 .row{
     max-width: 1140px;
     margin: 0 auto;
 
 }
 
+/*--------------HEADINGS-----------------*/
+
 h1 {
-    border: solid blue 2px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
+
+
+/*--------------BUTTONS-----------------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid  #e67e22;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid  #e67e22;
+    color:#e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+    border: #cf6d17;
+    color: #fff;
+}
+
+/*------------------------------------*/
+/*                HEADERS             */
+/*------------------------------------*/
 
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.350), rgba(0, 0, 0, 0.350)), url(img/hero.jpg);
@@ -38,4 +90,51 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+a:visited .logo,
+a:link .logo{
+    transform: translateY(0px);
+    transform: translateX(0px);
+    height: auto;
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    transition: width 0.3s, transform 0.3s, margin-top 0.3s;
+}
+
+a:hover .logo{
+    width: 105px;
+    margin-top: 17.5px;
+    transform: translateX(-2.5px);
+
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:visited,
+.main-nav li a:link{
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: solid transparent 2px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: solid #e67e22 2px;
+
 }
