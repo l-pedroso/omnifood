@@ -17,6 +17,16 @@ html {
 
 }
 
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    content: '-';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /*------------------------------------*/
 /*    REUSABLE COMPONENTS             */
 /*------------------------------------*/
@@ -92,7 +102,7 @@ h3{
 
 /*--------------ICONS-------------------*/
 
-ion-icon{
+.group .col .feature-icon{
     font-size: 400%;
     display: block;
     color: #e67e22;
@@ -139,6 +149,7 @@ header{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -239,4 +250,126 @@ a:hover .logo{
 
 .section-meals{
     padding: 0;
+}
+
+/*------------------------------------*/
+/*               HOW IT WORKS         */
+/*------------------------------------*/
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app_screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.section-steps{
+    background-color: rgb(236, 234, 234);
+}
+
+/*------------------------------------*/
+/*               CITIES SECTION       */
+/*------------------------------------*/
+
+.cities img {
+    width: 120%;
+}
+
+.cities h3{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.cities h3:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.city-features{
+    text-align: left;
+    margin: 8px;
+    margin-left: 10%;
+    display: flex;
+}
+
+/*------------------------------------*/
+/*              TESTIMONIALS          */
+/*------------------------------------*/
+
+.section-testimonials{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
