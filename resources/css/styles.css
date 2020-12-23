@@ -343,6 +343,7 @@ a:hover .logo{
     background-size: cover;
     color: white;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 blockquote{
@@ -372,4 +373,21 @@ cite img{
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+.row-testimonials{
+    margin-left: 7%;   
+}
+
+/*------------------------------------*/
+/*              PLANS                  */
+/*------------------------------------*/
+
+
+.row-plan {
+    margin-left: 10%;
+}
+
+.plan-list{
+    list-style: none;
 }
