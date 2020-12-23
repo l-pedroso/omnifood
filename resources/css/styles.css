@@ -383,6 +383,10 @@ cite img{
 /*              PLANS                  */
 /*------------------------------------*/
 
+.section-plan{
+    background-color: rgb(236, 234, 234);
+    overflow: hidden;
+}
 
 .row-plan {
     margin-left: 10%;
@@ -390,4 +394,42 @@ cite img{
 
 .plan-list{
     list-style: none;
+}
+
+.plan-list li{
+    padding: 5px 0;
+}
+
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px rgb(165, 165, 165);
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: solid 1px rgb(223, 220, 220);
+}
+
+.plan-box:last-child{
+    text-align: center;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+
 }
